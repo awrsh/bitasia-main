@@ -8,7 +8,7 @@ const Page = () => {
         <div className='layout mt-10'>
             <Image src={Countus} alt='' />
             <h1 className='text-xl font-extrabold text-center mt-10'>با ما در تماس باشید</h1>
-            <form className='w-[500px] mx-auto flex flex-col gap-4 mt-10'>
+            <form className='w-[95%] lg:w-[500px] mx-auto flex flex-col gap-2 lg:gap-4 mt-10'>
                 <Input required title='نام و نام خانوادگی'/>
                 <Input required title='ایمیل'/>
                 <Textare required title='پیام'/>

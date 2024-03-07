@@ -5,17 +5,17 @@ import ArrowSmall from "@/../public/images/small-arrow.png"
 import Image from 'next/image'
 const Page = () => {
     return (
-        <div className='flex items-center justify-between gap-10 px-10 mt-10'>
+        <div className='flex overflow-auto items-center justify-between gap-3 lg:gap-10 px-5 lg:px-10 mt-10 mb-10 lg:mb-0'>
             {
                 kyc.map((item, idx) => (
-                    <div className='bg-green-500 p-3 w-full rounded-xl' key={idx}>
+                    <div className='bg-green-500 min-w-full p-3 w-full rounded-xl' key={idx}>
                         <h1 className='text-center text-white font-extrabold text-2xl'>{item.status}</h1>
                         <ul className='py-8 space-y-2'>
                             {item.options.map((option, idx) => (
                                 <li className='text-white text-[14px]' key={idx}>{option}</li>
                             ))}
                         </ul>
-                        <Image className='w-20 mx-auto z-50 relative' src={ArrowBig} alt='' />
+                        <Image className='w-20 mx-auto z-40 relative' src={ArrowBig} alt='' />
                         <div className='bg-white w-[95%] p-4 rounded-xl mx-auto z-30 relative -mt-4'>
                             <div>
                                 <h6 className='w-fit bg-gray-200 mt-4 p-2 px-5 rounded-lg text-xs'>{item.transaction.title}</h6>

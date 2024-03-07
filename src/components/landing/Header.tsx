@@ -5,10 +5,10 @@ import { menus } from '@/helpers/utils/data'
 import Link from 'next/link'
 const Header = () => {
   return (
-    <header className='bg-dark_blue px-10 py-3 flex items-center justify-between'>
+    <header className='bg-dark_blue px-5 lg:px-10 sticky top-0 z-50 py-3 flex items-center justify-between'>
       <div className='flex items-center gap-8'>
         <Image width={170} height={170} src={Logo} alt='' />
-        <div className='flex items-center gap-4'>
+        <div className=' items-center gap-4 hidden lg:flex'>
           {menus.map((menu, idx) => (
             <Link className='block text-white font-medium' href={menu.url} key={idx}>
              {menu.name}
