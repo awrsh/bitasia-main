@@ -6,7 +6,7 @@ const Trades = () => {
   return (
     <div className='bg-[#0b1520] flex items-center py-24 justify-center gap-28'>
         {trads.map((trade,idx)=>(
-            <div>
+            <div key={idx}>
                 <Image className='mx-auto' src={trade.img} alt=''/>
                 <p className='text-white text-center py-3'>{trade.price}</p>
                 <p className='text-white text-center'>{trade.name}</p>
