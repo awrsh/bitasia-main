@@ -4,9 +4,9 @@ import React from 'react'
 
 const Options = () => {
   return (
-    <div className='mt-28'>
+    <div className='mt-10 lg:mt-28'>
         <h1 className='text-white text-center after:-translate-x-1/2 text-3xl relative after:absolute after:w-[300px] after:left-1/2 after:-bottom-6 after:h-px after:bg-green-500'>ورود به دنیای ارز دیجیتال با بیت آسیا</h1>
-        <div className='flex items-center justify-between mt-24'>
+        <div className='flex flex-col lg:flex-row items-center justify-between gap-5 mt-10 lg:mt-24'>
             {options.map((option,idx)=>(
                 <div key={idx}>
                     <Image className='mx-auto' width={90} height={90} src={option.image} alt=''/>

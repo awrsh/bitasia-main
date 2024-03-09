@@ -17,13 +17,13 @@ const CurrentPriceOfCurrency = () => {
                         <StyledTableCell align='center'>{currency.price_tether}</StyledTableCell>
                         <StyledTableCell align='center'>{currency.price_toman}</StyledTableCell>
                         <StyledTableCell align='center'>{currency.percent}</StyledTableCell>
-                        <StyledTableCell align='center'>
+                        <StyledTableCell className='!min-w-[120px]' align='center'>
                             <Sparklines height={90} data={[0, 5, 20, 25, 20, 15, 10, 5, 0]}>
                                 <SparklinesLine color={currency.percent < 0 ? "#20c997" : "#dc3545"} />
                             </Sparklines>
                         </StyledTableCell>
                         <StyledTableCell width={200} align='center'>
-                            <Link className='font-bold p-2 px-7 rounded-lg text-green-500 border border-green-500' href={"#"}>خرید / فروش</Link>
+                            <Link className='font-bold p-2 px-7 whitespace-nowrap rounded-lg text-green-500 border border-green-500' href={"#"}>خرید / فروش</Link>
                         </StyledTableCell>
                     </StyledTableRow>
                 ))}

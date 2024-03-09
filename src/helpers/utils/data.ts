@@ -319,8 +319,8 @@ export const kyc = [
 
 
 export const footer =
-{
-    guide: {
+[
+    {
         title: "راهنما",
         options: [
             {
@@ -341,7 +341,7 @@ export const footer =
             },
         ]
     },
-    bitasia: {
+    {
         title: "بیت‌‌آسیا",
         options: [
             {
@@ -358,7 +358,7 @@ export const footer =
             },
         ]
     },
-    property: {
+    {
         title: "ویژگی‌ها",
         options: [
             {
@@ -366,5 +366,6 @@ export const footer =
                 url: ""
             },
         ]
-    },
-}
+    }
+]
+

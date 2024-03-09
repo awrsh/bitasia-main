@@ -61,5 +61,5 @@ body {
 }
 
 .bg-propert {
-  background-image: url("../../public/images/circle.svg");
+ @apply lg:bg-[url(../../public/images/circle.svg)]
 }
