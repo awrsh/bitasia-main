@@ -4,12 +4,12 @@ import React from 'react'
 
 const Trades = () => {
   return (
-    <div className='bg-[#0b1520] flex flex-col lg:flex-row items-center py-10 lg:py-24 justify-center gap-10 lg:gap-28'>
+    <div className='dark:bg-[#0b1520] flex flex-col lg:flex-row items-center py-10 lg:py-24 justify-center gap-10 lg:gap-28'>
         {trads.map((trade,idx)=>(
             <div key={idx}>
-                <Image className='mx-auto' src={trade.img} alt=''/>
-                <p className='text-white text-center py-3'>{trade.price}</p>
-                <p className='text-white text-center'>{trade.name}</p>
+                <trade.icon className='mx-auto text-[#4DEEA1]' size={90}/>
+                <p className=' text-mode text-center py-3 pt-6'>{trade.price}</p>
+                <p className=' text-mode text-center'>{trade.name}</p>
             </div>
         ))}
     </div>

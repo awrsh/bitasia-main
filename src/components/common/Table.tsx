@@ -8,21 +8,8 @@ import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
 import Paper from "@mui/material/Paper";
 import { CircularProgress } from "@mui/material";
-const StyledTableCell = styled(TableCell)(() => ({
-    [`&.${tableCellClasses.head}`]: {
-        backgroundColor: "#192330",
-        color: "#fff",
-        fontFamily: "bold",
-        whiteSpace: "nowrap",
-        
-    },
-    [`&.${tableCellClasses.body}`]: {
-        fontSize: 10,
-        fontFamily: "regular",
-        color: "#222222",
-        borderColor: "transparent",
-    },
-}));
+import { useTheme } from "next-themes";
+
 
 interface PropsTable {
     header: string[];
@@ -39,6 +26,22 @@ export default function Table({
     isLoaidng,
     length,
 }: PropsTable) {
+    const {theme} = useTheme()
+    const StyledTableCell = styled(TableCell)(() => ({
+        [`&.${tableCellClasses.head}`]: {
+            backgroundColor: theme === "dark"?"#192330":"#eee",
+            color: theme === "dark"?"#fff":"#192330",
+            fontFamily: "bold",
+            whiteSpace: "nowrap",
+            
+        },
+        [`&.${tableCellClasses.body}`]: {
+            fontSize: 10,
+            fontFamily: "regular",
+            color: "#222222",
+            borderColor: "transparent",
+        },
+    }));
     return (
         <div className="flex-1">
             {title && <p className="font-es-regular text-[#3b3b3b] pb-4 pr-1">{title}</p>}

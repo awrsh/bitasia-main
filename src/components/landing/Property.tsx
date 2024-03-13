@@ -13,11 +13,11 @@ const Property = () => {
       <div className='bg-propert bg-center grid lg:grid-cols-2 gap-7  bg-no-repeat'>
         {
           property.map((property, idx) => (
-            <div className={`bg-[#192330] overflow-hidden rounded-xl p-4`} key={idx}
+            <div className={`bg-white border dark:bg-[#192330] overflow-hidden rounded-xl p-4`} key={idx}
             >
-              <Image className='mx-auto' src={property.url} alt='' />
-              <p className='text-center font-bold text-xl text-white'>{property.name}</p>
-              <p className='font-light pt-3 text-xs text-white'>{property.description}</p>
+              <property.icon className='mx-auto text-[#4DEEA1]' size={76} />
+              <p className='text-center pt-3 font-bold text-xl text-gray-800 dark:text-white'>{property.name}</p>
+              <p className='font-light pt-3 text-xs text-gray-800 dark:text-white'>{property.description}</p>
             </div>
           ))
         }

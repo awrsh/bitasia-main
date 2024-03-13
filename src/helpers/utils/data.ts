@@ -16,6 +16,16 @@ import Flag2 from "@/../public/images/flag2.png"
 import Flag3 from "@/../public/images/flag3.png"
 import Flag4 from "@/../public/images/flag4.png"
 import Flag5 from "@/../public/images/flag5.png"
+import { LiaHandHoldingUsdSolid } from "react-icons/lia";
+import { PiHandsClappingThin } from "react-icons/pi";
+import { BiSupport } from "react-icons/bi";
+import { IoShieldCheckmarkSharp } from "react-icons/io5";
+import { LuUserCheck } from "react-icons/lu";
+import { SiTether } from "react-icons/si";
+import { AiOutlineGlobal } from "react-icons/ai";
+import { SiBitcoinsv } from "react-icons/si";
+
+
 
 export const menus = [
     {
@@ -87,22 +97,22 @@ export const currentPriceOfCurrency = [
 
 export const property = [
     {
-        url: Easy,
+        icon: PiHandsClappingThin,
         name: "کاربری‌آسان",
         description: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، که لازم است."
     },
     {
-        url: Precent,
+        icon: LiaHandHoldingUsdSolid,
         name: "کاربری‌آسان",
         description: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، که لازم است."
     },
     {
-        url: Scourt,
+        icon: IoShieldCheckmarkSharp,
         name: "کاربری‌آسان",
         description: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، که لازم است."
     },
     {
-        url: Support,
+        icon: BiSupport,
         name: "کاربری‌آسان",
         description: "لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، که لازم است."
     },
@@ -110,19 +120,19 @@ export const property = [
 
 export const options = [
     {
-        image: User,
+        icon: LuUserCheck,
         text: "عضو خانواده بزرگ بیت آسیا شوید"
     },
     {
-        image: User,
+        icon: LuUserCheck,
         text: "سریع ترین احزار هویت درایران"
     },
     {
-        image: User,
+        icon: LuUserCheck,
         text: "خرید وفروش آسان و حرفه ای"
     },
     {
-        image: User,
+        icon: LuUserCheck,
         text: "عضو خانواده بزرگ بیت آسیا شوید   "
     },
 ]
@@ -137,17 +147,17 @@ export const optionsApplicatiion = [
 
 export const trads = [
     {
-        img: Exchage1,
+        icon: AiOutlineGlobal,
         price: "213.333.778",
         name: "حجم تعداد معاملات انجام شده"
     },
     {
-        img: Exchage2,
+        icon: SiBitcoinsv,
         price: "213.333.778",
         name: "حجم معاملات در بازار های تومان        "
     },
     {
-        img: Exchage3,
+        icon: SiTether,
         price: "213.333.778",
         name: "حجم معاملات در بازار های تتر        "
     },

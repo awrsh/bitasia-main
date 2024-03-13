@@ -52,12 +52,20 @@
   .layout {
     @apply w-[90%] mx-auto
   }
+  .text-mode{
+    @apply text-gray-800 dark:text-white
+  }
 }
+*{
+  font-size: 14px;
+}
+
 
 body {
   direction: rtl;
   overflow-x: hidden;
   font-family: "num" !important;
+  
 }
 
 .bg-propert {

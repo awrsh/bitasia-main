@@ -11,8 +11,8 @@ const Application = () => {
                 <Image fill alt='' src={AplicatiomImage} />
             </div>
             <div>
-                <h1 className='text-xl text-white font-bold'>اپـلیـکیـشـن بـیـت‌آسیـا</h1>
-                <p className='text-gray-300 text-xs py-3'>همیشه و همه جا بازار معاملات خود را همراه داشته باشید و در لحظه به راحتی و با سرعت معامله کنید</p>
+                <h1 className='text-xl text-mode font-bold'>اپـلیـکیـشـن بـیـت‌آسیـا</h1>
+                <p className='text-mode text-xs py-3'>همیشه و همه جا بازار معاملات خود را همراه داشته باشید و در لحظه به راحتی و با سرعت معامله کنید</p>
                 <ul className='space-y-3 mt-4'>
                     {
                         optionsApplicatiion.map((option, idx) => (
@@ -24,13 +24,13 @@ const Application = () => {
                     }
                 </ul>
                <div className='flex items-center gap-10 mt-10'>
-               <button className=' flex-1 flex gap-2 items-center justify-center rounded-lg p-3  bg-[#192330]'>
+               <button className=' flex-1 flex gap-2 items-center justify-center rounded-lg p-3  border dark:bg-[#192330]'>
                     <Image width={20} height={20} src={Android} alt='' />
-                    <span className='text-white text-[14px]'>دانلود اندروید</span>
+                    <span className='text-mode text-[14px]'>دانلود اندروید</span>
                 </button>
-                <button className='flex-1 flex gap-2 items-center justify-center rounded-lg p-3 bg-[#192330]'>
+                <button className='flex-1 flex gap-2 items-center justify-center rounded-lg p-3 border dark:bg-[#192330]'>
                     <Image width={20} height={20} src={Ios} alt='' />
-                    <span className='text-white text-[14px]'>دانلود ios</span>
+                    <span className='text-mode text-[14px]'>دانلود ios</span>
                 </button>
                </div>
             </div>

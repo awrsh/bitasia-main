@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import "../styles/globals.css";
+import ThemeContextProvider from "@/context/ThemeContextProvider";
 
 
 export const metadata: Metadata = {
@@ -14,8 +15,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
-      <body>{children}</body>
+    <html suppressHydrationWarning lang="en">
+      <body className="light">
+        <ThemeContextProvider>
+          {children}
+        </ThemeContextProvider>
+      </body>
     </html>
   );
 }
