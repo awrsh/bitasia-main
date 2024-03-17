@@ -16,9 +16,9 @@ const CurrentPriceOfCurrency = () => {
                         <StyledTableCell align='center'>{currency.name}</StyledTableCell>
                         <StyledTableCell align='center'>{currency.price_tether}</StyledTableCell>
                         <StyledTableCell align='center'>{currency.price_toman}</StyledTableCell>
-                        <StyledTableCell align='center'>{currency.percent}</StyledTableCell>
+                        <StyledTableCell align='center' >{currency.percent}</StyledTableCell>
                         <StyledTableCell width={200} className='!min-w-[120px]' align='center'>
-                            <Sparklines  data={[0, 5, 20, 25, 20, 15, 10, 5, 0]}>
+                            <Sparklines  data={[0, 5, 20, 25, 20, 15, 10, 5, 45,32,47,34]}>
                                 <SparklinesLine style={{height:"20px"}} color={currency.percent < 0 ? "#20c997" : "#dc3545"} />
                             </Sparklines>
                         </StyledTableCell>

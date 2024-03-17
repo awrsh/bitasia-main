@@ -14,17 +14,16 @@ export default function Home() {
     <>
       <main className="">
         <Introduction />
-        <div className="bg-white dark:bg-[#0b1520] px-5 lg:px-20 pb-20">
+        <div className="bg-white dark:bg-[#3C4043] px-5 lg:px-20 pb-20">
           <FluctuationsInDigitalCurrency />
           <CurrentPriceOfCurrency />
           <Property />
           <Options />
-          <Application />
+          {/* <Application /> */}
         </div>
         <InviteFriends />
-        <Trades />
+        {/* <Trades /> */}
       </main>
-      <Footer />
     </>
   );
 }

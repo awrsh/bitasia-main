@@ -12,11 +12,11 @@ const Header = () => {
 
   return (
     <header className='bg-[#fff] shadow-md dark:bg-dark_blue px-5 lg:px-10 sticky top-0 z-50 py-3 flex items-center justify-between'>
-      <div className='flex items-center gap-8'>
+      <div className='flex items-center gap-14'>
         <Link href="/">
           <Image width={170} height={170} src={Logo} alt='' />
         </Link>
-        <div className=' items-center gap-4 hidden lg:flex'>
+        <div className=' items-center gap-7 hidden lg:flex'>
           {menus.map((menu, idx) => (
             <Link className='block text-mode font-medium' href={menu.url} key={idx}>
               {menu.name}
@@ -26,9 +26,9 @@ const Header = () => {
       </div>
       <div className='flex items-center gap-3 '>
         <ThemeButton />
-        <Link className='block font-bold border rounded-lg p-2  border-gray-500 dark:border-green-500 text-gray-600 dark:text-white' href="https://bitasia.ir/auth">
+        <a className='block font-bold border rounded-lg p-2  border-gray-500 dark:border-green-500 text-gray-600 dark:text-white' href="https://dashboard.bitasia.ir">
           ورود‌ و ثبت‌نام
-        </Link>
+        </a>
       </div>
     </header>
   )

@@ -29,20 +29,20 @@ import { SiBitcoinsv } from "react-icons/si";
 
 export const menus = [
     {
-        name: "درباره ما",
-        url: "about-us",
+        name: "بازار معاملات",
+        url: "/https://dashboard.bitasia.ir/exchange",
     },
     {
-        name: "تماس باما",
-        url: "contact-us",
+        name: "خرید آسان",
+        url: "https://dashboard.bitasia.ir/buy",
+    },
+    {
+        name: "قیمت لحظه ای",
+        url: "dashboard.bitasia.ir/current-price",
     },
     {
         name: "قوانین و مقررات",
-        url: "faq",
-    },
-    {
-        name: "شرایط احرازهویت",
-        url: "kyc",
+        url: "rules",
     },
     {
         name: "بلاگ",
@@ -70,16 +70,17 @@ export const fluctuationsInDigitalCurrency = [
         url: Bitcoin,
         name: "بیت‌کوین",
         enName: "BTC",
-        precent: 2,
+        precent: -1,
         price: "899.655.321"
     },
     {
         url: Bitcoin,
         name: "بیت‌کوین",
         enName: "BTC",
-        precent: -2,
+        precent: -1,
         price: "899.655.321"
     },
+  
 ]
 
 
@@ -91,7 +92,49 @@ export const currentPriceOfCurrency = [
         price_tether: "22575.73",
         price_toman: 994288809,
         percent: -1.23
-    }
+    },
+    {
+        url: Bitcoin,
+        name: "بیت‌کوین",
+        price_tether: "22575.73",
+        price_toman: 994288809,
+        percent: -1.23
+    },
+    {
+        url: Bitcoin,
+        name: "بیت‌کوین",
+        price_tether: "22575.73",
+        price_toman: 994288809,
+        percent: -1.23
+    },
+    {
+        url: Bitcoin,
+        name: "بیت‌کوین",
+        price_tether: "22575.73",
+        price_toman: 994288809,
+        percent: -1.23
+    },
+    {
+        url: Bitcoin,
+        name: "بیت‌کوین",
+        price_tether: "22575.73",
+        price_toman: 994288809,
+        percent: -1.23
+    },
+    {
+        url: Bitcoin,
+        name: "بیت‌کوین",
+        price_tether: "22575.73",
+        price_toman: 994288809,
+        percent: -1.23
+    },
+    {
+        url: Bitcoin,
+        name: "بیت‌کوین",
+        price_tether: "22575.73",
+        price_toman: 994288809,
+        percent: -1.23
+    },
 ]
 
 
@@ -335,11 +378,11 @@ export const footer =
         options: [
             {
                 name: "سوالات متداول",
-                url: ""
+                url: "faq"
             },
             {
                 name: "سطوح‌کاربری",
-                url: ""
+                url: "kyc"
             },
             {
                 name: "کارمزد",
@@ -349,6 +392,7 @@ export const footer =
                 name: "معرفی‌به‌دوستان",
                 url: ""
             },
+          
         ]
     },
     {
@@ -356,15 +400,19 @@ export const footer =
         options: [
             {
                 name: "درباره‌ی‌ما",
-                url: ""
+                url: "about-us"
             },
             {
                 name: "تماس‌باما",
-                url: ""
+                url: "contact-us"
             },
             {
                 name: "شرایط‌استفاده",
                 url: ""
+            },
+            {
+                name: "کارمزدها",
+                url: "kyc"
             },
         ]
     },

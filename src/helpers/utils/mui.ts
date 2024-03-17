@@ -34,6 +34,7 @@ export const StyledTableCell = styled(TableCell)(() => {
             fontFamily: "num",
             color: theme === "dark" ? "#fff" : "#2b313c",
             borderColor: "transparent",
+            padding: "15px"
         },
     })
 });

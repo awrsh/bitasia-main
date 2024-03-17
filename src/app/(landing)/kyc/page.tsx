@@ -8,7 +8,7 @@ const Page = () => {
         <div className='flex overflow-auto items-center justify-between gap-3 lg:gap-[5px] px-5 lg:px-10 mt-10 mb-10 lg:mb-0'>
             {
                 kyc.map((item, idx) => (
-                    <div className='bg-[#0072ff] min-w-[23%] p-3 w-full rounded-xl' key={idx}>
+                    <div className='bg-[#0099b0] min-w-[23%] p-3 w-full rounded-xl' key={idx}>
                         <h1 className='text-center text-white font-extrabold text-2xl'>{item.status}</h1>
                         <ul className='py-8 space-y-2'>
                             {item.options.map((option, idx) => (
