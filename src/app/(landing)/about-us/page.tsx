@@ -7,7 +7,7 @@ import Guide from "@/../public/images/Guide.webp"
 import Link from 'next/link'
 const Page = () => {
     return (
-        <>
+        <div className='dark:bg-black'>
             <div className='layout mt-10'>
                 <Image className='mx-auto' src={AboutImg} alt='' />
                 <h1 className='text-center text-2xl font-extrabold mt-10'>درباره ما</h1>
@@ -31,7 +31,7 @@ const Page = () => {
                     <p className='pt-5 whitespace-nowrap lg:-pr-5 text-white'>تیم پشتیبانی ما آماده پاسخگویی به سوالات شماست.</p>
                 </div>
             </div>
-        </>
+        </div>
     )
 }
 

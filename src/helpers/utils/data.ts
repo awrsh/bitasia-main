@@ -38,7 +38,7 @@ export const menus = [
     },
     {
         name: "قیمت لحظه ای",
-        url: "dashboard.bitasia.ir/current-price",
+        url: "https://dashboard.bitasia.ir/current-price",
     },
     {
         name: "قوانین و مقررات",

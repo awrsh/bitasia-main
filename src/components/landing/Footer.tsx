@@ -5,7 +5,7 @@ import { footer, social_media } from '@/helpers/utils/data'
 import Link from 'next/link'
 const Footer = () => {
   return (
-    <footer className='dark:bg-[#212529] px-5 lg:px-20 bg-[#eee]'>
+    <footer className='dark:bg-dark_deep px-5 lg:px-20 bg-[#eee]'>
       <div className='flex flex-col lg:flex-row gap-5 lg:gap-14'>
         <div>
           <div className='relative w-[200px] h-[100px] lg:w-[300px] lg:h-[160px]'>
