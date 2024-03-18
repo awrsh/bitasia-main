@@ -15,7 +15,7 @@ const CurrentPriceOfCurrency = ({ currency }: Props) => {
         <div className='mt-14'>
             <h1 className='text-2xl text-white font-extrabold pb-10'>قیمت لحظه ای ارز</h1>
             <Table header={["نام‌ارز", "قیمت", "تغیرت 24 ساعت", "نمودار", ""]}>
-                {currency.slice(1,50).map((currency, idx) => {
+                {currency?.slice(1,50).map((currency, idx) => {
                     if(Number(currency.price_info.price) === 0) return null
                     return (
                         (

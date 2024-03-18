@@ -12,7 +12,7 @@ const FluctuationsInDigitalCurrency = ({ currency }: Props) => {
       <p className='text-mode text-xs mt-8'>در 24 ساعت گذشته</p>
       <div className='flex flex-col lg:flex-row mt-5 lg:mt-3 items-center justify-between gap-6'>
         {
-          currency.slice(1,7).map((currency, idx) => {
+          currency?.slice(1,7).map((currency, idx) => {
             if(Number(currency.price_info.price) === 0) return null
             return (
               <CardFluctuationsInDigitalCurrency key={idx} currency={currency} />
