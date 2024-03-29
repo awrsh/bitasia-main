@@ -30,7 +30,7 @@ import { SiBitcoinsv } from "react-icons/si";
 export const menus = [
     {
         name: "بازار معاملات",
-        url: "/https://dashboard.bitasia.ir/exchange",
+        url: "https://dashboard.bitasia.ir/exchange",
     },
     {
         name: "خرید آسان",
@@ -383,10 +383,6 @@ export const footer =
             {
                 name: "سطوح‌کاربری",
                 url: "kyc"
-            },
-            {
-                name: "کارمزد",
-                url: ""
             },
             {
                 name: "معرفی‌به‌دوستان",
