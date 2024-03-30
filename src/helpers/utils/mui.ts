@@ -9,8 +9,8 @@ export const StyledTableRow = styled(TableRow)(() => {
     return ({
         position: "relative",
         border: 0,
+        backgroundColor: theme === "dark" ? "#2b313c" : "#fff",
         "&:nth-of-type(odd)": {
-            backgroundColor: theme === "dark" ? "#2b313c" : "#fff",
         },
         // hide last border
         "&:last-child td, &:last-child th": {
