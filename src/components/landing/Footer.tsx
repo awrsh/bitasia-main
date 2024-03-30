@@ -19,7 +19,7 @@ const Footer = () => {
             footer.map((item, idx) => (
               <div key={idx}>
                 <h1 className='text-[#407bff] font-bold '>{item.title}</h1>
-                <div className='mt-3 space-y-2'>
+                <div className='mt-3 space-y-4'>
                   {item.options.map((option, idx) => (
                     <li className='text-mode' key={idx}>
                       <Link href={option.url}>{option.name}</Link>

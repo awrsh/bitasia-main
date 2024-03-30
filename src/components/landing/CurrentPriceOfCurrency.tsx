@@ -9,19 +9,15 @@ import { Currency } from '@/types/Home';
 import Image from 'next/image';
 type Props = {
     currency: Currency[];
-    showTitle?:boolean
 }
-const CurrentPriceOfCurrency = ({ currency,showTitle }: Props) => {
+const CurrentPriceOfCurrency = ({ currency  }: Props) => {
     return (
         <div className='mt-14'>
-            {
-                showTitle ? 
-                <h1 className='text-2xl w-fit text-mode font-extrabold relative after:absolute after:w-[80%] after:-bottom-3 after:rounded-xl after:right-0 after:h-px after:bg-[#407bff] mb-8'>قیمت لحظه ای ارز</h1>
-                :null
-            }
+            <h1 className='text-2xl w-fit text-mode font-extrabold relative after:absolute after:w-[80%] after:-bottom-3 after:rounded-xl after:right-0 after:h-px after:bg-[#407bff] mb-8'>قیمت لحظه ای ارز</h1>
+
             <Table header={["نام‌ارز", "قیمت", "تغیرت 24 ساعت", "نمودار", ""]}>
-                {currency?.slice(1,50).map((currency, idx) => {
-                    if(Number(currency.price_info.price) === 0) return null
+                {currency?.slice(1, 50).map((currency, idx) => {
+                    if (Number(currency.price_info.price) === 0) return null
                     return (
                         (
                             <StyledTableRow key={idx}>

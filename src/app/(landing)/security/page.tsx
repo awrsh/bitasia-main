@@ -9,7 +9,7 @@ const Page = () => {
         <div className='w-[70%] mx-auto flex flex-col gap-10 my-20'>
             {
                 security.map((sec, idx) => (
-                    <Link href={sec.link} className='dark:bg-[#222] p-6 rounded-lg flex gap-10' key={idx}>
+                    <Link href={sec.link} className='dark:bg-[#222] p-6 rounded-lg flex gap-10 bg-[#eee]' key={idx}>
                             <div>
                                 <div className='flex items-center gap-2' key={idx}>
                                     <IoBook size={23} className='text-green-500' />

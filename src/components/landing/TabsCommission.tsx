@@ -24,7 +24,7 @@ const TabsCommission = () => {
 
             <ul className='space-y-5 mt-14'>
                 <li className='relative pr-4  before:absolute before:right-0 before:top-[6px] before:w-2 before:h-2 before:bg-green-500 before:rounded-full'>
-                    منظور از حجم دارایی مجموع ارزش تمامی رمزارزها و موجودی تومانی شما در بیت‌پین است. حجم دارایی در ساعت ۲۳:۵۹ هر شب محاسبه شده و برای محاسبات کارمزدی ۲۴ ساعت بعدی استفاده می‌شود.
+                    منظور از حجم دارایی مجموع ارزش تمامی رمزارزها و موجودی تومانی شما در بیت‌آسیا است. حجم دارایی در ساعت ۲۳:۵۹ هر شب محاسبه شده و برای محاسبات کارمزدی ۲۴ ساعت بعدی استفاده می‌شود.
                 </li>
                 <li className='relative  pr-4  before:absolute before:right-0 before:top-[6px] before:w-2 before:h-2 before:bg-green-500 before:rounded-full'>
                     کارمزد از هر طرف معامله، از میزان کل دارایی معامله‌شده کسر می‌شود.
