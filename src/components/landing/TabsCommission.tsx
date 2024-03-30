@@ -5,14 +5,18 @@ import RialWithdrawalSchedule from './RialWithdrawalSchedule'
 import CurrentPriceOfCurrency from './CurrentPriceOfCurrency'
 
 
-const TabsCommission = () => {
+
+type Props = {
+    showTitle: boolean[];
+}
+const TabsCommission = ({ showTitle }: Props) => {
     const [select, setSelect] = useState(0)
     return (
         <div className='my-[140px]'>
             <div className='flex items-center gap-10'>
                 {
                     ["کارمزد معاملات", "کارمزد برداشت رمز ارز", "زمان بندی برداشت ریالی"].map((tab, idx) => (
-                        <button onClick={() => setSelect(idx)} className={`dark:text-white border-b pb-3 ${select === idx ? "border-green-500" : "border-transparent"}`}>{tab}</button>
+                        <button key={idx} onClick={() => setSelect(idx)} className={`dark:text-white border-b pb-3 ${select === idx ? "border-green-500" : "border-transparent"}`}>{tab}</button>
                     ))
                 }
             </div>
