@@ -22,7 +22,7 @@ const ThemeButton = () => {
             <button className="w-10 h-10 rounded-full border flex justify-center items-center" onClick={() => setTheme(theme === "dark"?"light":"dark")}>
                 {
                     theme === "dark" ?
-                        <MdSunny size={20}/>
+                        <MdSunny className="text-white" size={20}/>
                         :
                         <IoMoonSharp size={20} />
                 }

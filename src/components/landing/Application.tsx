@@ -1,5 +1,5 @@
 import React from 'react'
-import AplicatiomImage from "@/../public/images/appliction.png"
+import AplicatiomImage from "@/../public/images/Bitcoin-P2P.gif"
 import Image from 'next/image'
 import { optionsApplicatiion } from '@/helpers/utils/data'
 import Android from "@/../public/images/android.png"

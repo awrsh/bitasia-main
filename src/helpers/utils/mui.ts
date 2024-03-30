@@ -9,7 +9,7 @@ export const StyledTableRow = styled(TableRow)(() => {
     return ({
         position: "relative",
         border: 0,
-        backgroundColor: theme === "dark" ? "#2b313c" : "#fff",
+        backgroundColor: theme === "dark" ? "#1a1a1a" : "#fff",
         "&:nth-of-type(odd)": {
         },
         // hide last border
@@ -24,7 +24,7 @@ export const StyledTableCell = styled(TableCell)(() => {
     return ({
         border: 0,
         [`&.${tableCellClasses.head}`]: {
-            backgroundColor: theme === "dark" ? "#2b313c" : "#fff",
+            backgroundColor: theme === "dark" ? "#1a1a1a" : "#fff",
             color: "#626262",
             fontFamily: "bold",
             whiteSpace: "nowrap",
@@ -32,8 +32,9 @@ export const StyledTableCell = styled(TableCell)(() => {
         [`&.${tableCellClasses.body}`]: {
             fontSize: 12,
             fontFamily: "num",
-            color: theme === "dark" ? "#fff" : "#2b313c",
+            color: theme === "dark" ? "#fff" : "#1a1a1a",
             borderColor: "transparent",
+            padding: "15px"
         },
     })
 });

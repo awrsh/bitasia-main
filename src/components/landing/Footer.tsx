@@ -1,11 +1,11 @@
 import Image from 'next/image'
 import React from 'react'
-import Logo from "@/../public/images/logo.png"
+import Logo from "@/../public/images/logo.svg"
 import { footer, social_media } from '@/helpers/utils/data'
 import Link from 'next/link'
 const Footer = () => {
   return (
-    <footer className='dark:bg-[#0f2336] px-5 lg:px-20'>
+    <footer className='dark:bg-dark_deep px-5 lg:px-20 mt-20 bg-[#eee]'>
       <div className='flex flex-col lg:flex-row gap-5 lg:gap-14'>
         <div>
           <div className='relative w-[200px] h-[100px] lg:w-[300px] lg:h-[160px]'>
@@ -18,7 +18,7 @@ const Footer = () => {
           {
             footer.map((item, idx) => (
               <div key={idx}>
-                <h1 className='text-green-500 font-bold '>{item.title}</h1>
+                <h1 className='text-[#407bff] font-bold '>{item.title}</h1>
                 <div className='mt-3 space-y-2'>
                   {item.options.map((option, idx) => (
                     <li className='text-mode' key={idx}>

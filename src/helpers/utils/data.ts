@@ -29,20 +29,20 @@ import { SiBitcoinsv } from "react-icons/si";
 
 export const menus = [
     {
-        name: "بازار‌معاملات",
-        url: "",
+        name: "بازار معاملات",
+        url: "https://dashboard.bitasia.ir/exchange",
     },
     {
-        name: "قیمت لحضه‌ای",
-        url: "",
+        name: "خرید آسان",
+        url: "https://dashboard.bitasia.ir/buy",
     },
     {
-        name: "سوالی‌دارید؟",
-        url: "",
+        name: "قیمت لحظه ای",
+        url: "https://dashboard.bitasia.ir/current-price",
     },
     {
-        name: "معرفی‌به‌دوستان",
-        url: "",
+        name: "قوانین و مقررات",
+        url: "rules",
     },
     {
         name: "بلاگ",
@@ -70,16 +70,17 @@ export const fluctuationsInDigitalCurrency = [
         url: Bitcoin,
         name: "بیت‌کوین",
         enName: "BTC",
-        precent: 2,
+        precent: -1,
         price: "899.655.321"
     },
     {
         url: Bitcoin,
         name: "بیت‌کوین",
         enName: "BTC",
-        precent: -2,
+        precent: -1,
         price: "899.655.321"
     },
+  
 ]
 
 
@@ -91,7 +92,49 @@ export const currentPriceOfCurrency = [
         price_tether: "22575.73",
         price_toman: 994288809,
         percent: -1.23
-    }
+    },
+    {
+        url: Bitcoin,
+        name: "بیت‌کوین",
+        price_tether: "22575.73",
+        price_toman: 994288809,
+        percent: -1.23
+    },
+    {
+        url: Bitcoin,
+        name: "بیت‌کوین",
+        price_tether: "22575.73",
+        price_toman: 994288809,
+        percent: -1.23
+    },
+    {
+        url: Bitcoin,
+        name: "بیت‌کوین",
+        price_tether: "22575.73",
+        price_toman: 994288809,
+        percent: -1.23
+    },
+    {
+        url: Bitcoin,
+        name: "بیت‌کوین",
+        price_tether: "22575.73",
+        price_toman: 994288809,
+        percent: -1.23
+    },
+    {
+        url: Bitcoin,
+        name: "بیت‌کوین",
+        price_tether: "22575.73",
+        price_toman: 994288809,
+        percent: -1.23
+    },
+    {
+        url: Bitcoin,
+        name: "بیت‌کوین",
+        price_tether: "22575.73",
+        price_toman: 994288809,
+        percent: -1.23
+    },
 ]
 
 
@@ -329,58 +372,56 @@ export const kyc = [
 
 
 export const footer =
-    [
-        {
-            title: "راهنما",
-            options: [
-                {
-                    name: "سوالات متداول",
-                    url: ""
-                },
-                {
-                    name: "سطوح‌کاربری",
-                    url: ""
-                },
-                {
-                    name: "کارمزد",
-                    url: ""
-                },
-                {
-                    name: "معرفی‌به‌دوستان",
-                    url: ""
-                },
-            ]
-        },
-        {
-            title: "بیت‌‌آسیا",
-            options: [
-                {
-                    name: "درباره‌ی‌ما",
-                    url: ""
-                },
-                {
-                    name: "تماس‌باما",
-                    url: ""
-                },
-                {
-                    name: "شرایط‌استفاده",
-                    url: ""
-                },
-            ]
-        },
-        {
-            title: "ویژگی‌ها",
-            options: [
-                {
-                    name: "امنیت",
-                    url: ""
-                },
-            ]
-        }
-    ]
-
-
-
+[
+    {
+        title: "راهنما",
+        options: [
+            {
+                name: "سوالات متداول",
+                url: "faq"
+            },
+            {
+                name: "سطوح‌کاربری",
+                url: "kyc"
+            },
+            {
+                name: "معرفی‌به‌دوستان",
+                url: ""
+            },
+          
+        ]
+    },
+    {
+        title: "بیت‌‌آسیا",
+        options: [
+            {
+                name: "درباره‌ی‌ما",
+                url: "about-us"
+            },
+            {
+                name: "تماس‌باما",
+                url: "contact-us"
+            },
+            {
+                name: "شرایط‌استفاده",
+                url: ""
+            },
+            {
+                name: "کارمزدها",
+                url: "kyc"
+            },
+        ]
+    },
+    {
+        title: "ویژگی‌ها",
+        options: [
+            {
+                name: "امنیت",
+                url: ""
+            },
+        ]
+    }
+]
 
 export const user_levels = [
     {

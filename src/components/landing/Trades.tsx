@@ -4,10 +4,10 @@ import React from 'react'
 
 const Trades = () => {
   return (
-    <div className='dark:bg-[#0b1520] flex flex-col lg:flex-row items-center py-10 lg:py-24 justify-center gap-10 lg:gap-28'>
+    <div className='dark:bg-[#0b1520] flex flex-col lg:flex-row items-center py-10 lg:py-24 justify-evenly gap-10 lg:gap-0'>
         {trads.map((trade,idx)=>(
             <div key={idx}>
-                <trade.icon className='mx-auto text-[#4DEEA1]' size={90}/>
+                <trade.icon className='mx-auto text-[#407bff]' size={90}/>
                 <p className=' text-mode text-center py-3 pt-6'>{trade.price}</p>
                 <p className=' text-mode text-center'>{trade.name}</p>
             </div>

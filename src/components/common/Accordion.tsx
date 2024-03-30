@@ -20,13 +20,13 @@ export default function Accordion({ title, description }: Props) {
                     id="panel1-header"
                 >
                     <div className='flex items-center gap-4'>
-                        <span className='bg-green-500 w-10 flex justify-center items-center h-10  rounded-full'>
+                        <span className='bg-[#407bff] w-10 flex justify-center items-center h-10  rounded-full'>
                             <LuPlus size={20} className='text-white' />
                         </span>
                         <span className='font-bold'>{title}</span>
                     </div>
                 </AccordionSummary>
-                <AccordionDetails className='text-justify text-gray-700 text-[14px]'>
+                <AccordionDetails className='text-justify text-gray-700 text-[14px] leading-8'>
                     {description}
                 </AccordionDetails>
             </AccordionMui>

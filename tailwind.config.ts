@@ -10,7 +10,9 @@ const config: Config = {
   theme: {
     extend: {
       backgroundColor: {
-        dark_blue:"#0f2336"
+        block:"#222222",
+        dark_deep:"#1a1a1a"
+        
       },
       fontFamily: {
         "bold": "bold",

@@ -18,7 +18,7 @@ const TabsCommission = () => {
             </div>
 
             {select === 0 ? <TransactionFees /> : null}
-            {select === 1 ? <CurrentPriceOfCurrency showTitle={false} /> : null}
+            {select === 1 ? <CurrentPriceOfCurrency currency={[]} showTitle={false} /> : null}
             {select === 2 ? <RialWithdrawalSchedule /> : null}
 
 
