@@ -6,10 +6,8 @@ import CurrentPriceOfCurrency from './CurrentPriceOfCurrency'
 
 
 
-type Props = {
-    showTitle: boolean[];
-}
-const TabsCommission = ({ showTitle }: Props) => {
+ 
+const TabsCommission = ( ) => {
     const [select, setSelect] = useState(0)
     return (
         <div className='my-[140px]'>
@@ -22,7 +20,7 @@ const TabsCommission = ({ showTitle }: Props) => {
             </div>
 
             {select === 0 ? <TransactionFees /> : null}
-            {select === 1 ? <CurrentPriceOfCurrency currency={[]} showTitle={false} /> : null}
+            {select === 1 ? <CurrentPriceOfCurrency currency={[]}  /> : null}
             {select === 2 ? <RialWithdrawalSchedule /> : null}
 
 
