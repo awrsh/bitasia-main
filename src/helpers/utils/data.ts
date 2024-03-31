@@ -386,7 +386,7 @@ export const footer =
             },
             {
                 name: "معرفی‌به‌دوستان",
-                url: ""
+                url: "https://dashboard.bitasia.ir/invite-friends"
             },
           
         ]
