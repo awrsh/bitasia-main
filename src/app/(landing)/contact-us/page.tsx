@@ -41,7 +41,9 @@ const Page = () => {
                                 <div>
                                     <p className="text-light-1 text-[14px]">آدرس  </p>
                                     <p className="mt-3 font-extrabold text-[16px]">
-                                        تهران ، قیطریه ،قلندری جنوبی
+                                        تهران ، قیطریه ،قلندری جنوبی 
+                                        <br />
+                                    کوچه شیرین پلاک ۲ - واحد ۲
                                     </p>
                                 </div>
                             </div>
