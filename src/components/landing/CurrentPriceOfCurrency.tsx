@@ -13,7 +13,7 @@ type Props = {
 const CurrentPriceOfCurrency = ({ currency  }: Props) => {
     return (
         <div className='mt-14'>
-            <h1 className='text-2xl w-fit text-mode font-extrabold relative after:absolute after:w-[80%] after:-bottom-3 after:rounded-xl after:right-0 after:h-px after:bg-[#407bff] mb-8'>قیمت لحظه ای ارز</h1>
+            <h1 className=' w-fit    text-[#407bff] text-3xl font-extrabold relative after:absolute after:w-[80%] after:-bottom-3 after:rounded-xl after:right-0 after:h-px after:bg-[#407bff] mb-8'>قیمت لحظه ای ارزهای دیجیتال</h1>
 
             <Table header={["نام‌ارز", "قیمت", "تغیرت 24 ساعت", "نمودار", ""]}>
                 {currency?.slice(1, 50).map((currency, idx) => {
