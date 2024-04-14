@@ -7,7 +7,7 @@ import Footer from "@/components/landing/Footer";
 
 
 export const metadata: Metadata = {
-  title: "صرافی بیت آسیا",
+  title: "4588093",
   description: "صرافی بیت آسیا",
 };
 
