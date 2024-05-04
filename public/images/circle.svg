@@ -1,4 +1,9 @@
 <svg class="circle-chart" viewBox="0 0 33.83098862 33.83098862" xmlns="http://www.w3.org/2000/svg">
+<<<<<<< HEAD
+<circle stroke="#eeeeee" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
+<circle class="circle-chart-circle" stroke="#4deea1" stroke-width="2" stroke-dasharray="100,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
+=======
 <circle stroke="#000" stroke-width="2" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
 <circle class="circle-chart-circle" stroke="#407bff" stroke-width="2" stroke-dasharray="100,100" fill="none" cx="16.91549431" cy="16.91549431" r="15.91549431"></circle>
+>>>>>>> a5af14c52f1fb97a6e42d0cdab698494629fc8ae
 </svg>

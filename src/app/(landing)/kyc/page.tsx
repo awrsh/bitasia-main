@@ -5,11 +5,11 @@ const Page = () => {
         <div className='flex overflow-auto  pb-24 items-center justify-between gap-20 lg:gap-[25px] px-5 lg:px-10 mt-10 mb-10 lg:mb-0'>
             {
                 kyc.map((item, idx) => (
-                    <div className='dark:bg-dark_deep w-full p-3 rounded-xl' key={idx}>
-                        <h1 className='text-center text-white font-extrabold text-2xl'>{item.status}</h1>
+                    <div className='dark:bg-dark_deep w-full p-3 rounded-xl bg-[#eee]' key={idx}>
+                        <h1 className='text-center  font-extrabold text-2xl'>{item.status}</h1>
                         <ul className='py-8 space-y-2'>
                             {item.options.map((option, idx) => (
-                                <li className='text-white text-[14px]' key={idx}>{option}</li>
+                                <li className=' text-[14px]' key={idx}>{option}</li>
                             ))}
                         </ul>
                         <div className='bg-white dark:bg-dark_deep w-[95%] p-4 rounded-xl mx-auto z-30 relative -mt-4'>
