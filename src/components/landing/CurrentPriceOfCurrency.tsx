@@ -16,7 +16,7 @@ const CurrentPriceOfCurrency = ({ currency }: Props) => {
             <h1 className='text-2xl text-white font-extrabold pb-10'>قیمت لحظه ای ارز</h1>
             <Table header={["نام‌ارز", "قیمت", "تغیرت 24 ساعت", "نمودار", ""]}>
                 {currency.slice(1,50).map((currency, idx) => {
-                    if(Number(currency.price_info.price) === 0) return null
+                    if(Number(currency.price) === 0) return null
                     return (
                         (
                             <StyledTableRow key={idx}>
@@ -29,15 +29,13 @@ const CurrentPriceOfCurrency = ({ currency }: Props) => {
                                         </p>
 
                                     </div>
-
-
                                 </StyledTableCell>
-                                <StyledTableCell align='center'>{Number(currency.price_info.price).toLocaleString()}</StyledTableCell>
-                                <StyledTableCell dir='ltr' className={`${currency.price_info.change > 0 ? "!text-[#20c997]" : "!text-[#dc3545]"}`} align='center'>{Number(currency.price_info.change).toFixed(2)}</StyledTableCell>
+                                <StyledTableCell align='center'>{Number(currency.price).toLocaleString()}</StyledTableCell>
+                                <StyledTableCell dir='ltr' className={`${currency.price_info_change > 0 ? "!text-[#20c997]" : "!text-[#dc3545]"}`} align='center'>{Number(currency.price_info_change).toFixed(2)}</StyledTableCell>
                                 <StyledTableCell width={200} className='!min-w-[120px]' align='center'>
                                     {/* @ts-ignore */}
-                                    <Sparklines data={[...currency.price_info.price!]}>
-                                        <SparklinesLine style={{ height: "20px" }} color={currency.price_info.change > 0 ? "#20c997" : "#dc3545"} />
+                                    <Sparklines data={[Number(currency.price),12*idx]}>
+                                        <SparklinesLine style={{ height: "20px" }} color={currency.price_info_change > 0 ? "#20c997" : "#dc3545"} />
                                     </Sparklines>
                                 </StyledTableCell>
                                 <StyledTableCell width={200} align='center'>

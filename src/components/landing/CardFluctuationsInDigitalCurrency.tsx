@@ -18,12 +18,12 @@ const CardFluctuationsInDigitalCurrency = ({ currency }: Props) => {
                 </div>
             </div>
             <div className='flex-1'>
-                <p className={`text-left  [direction:ltr] ${currency.price_info.change > 0 ? "text-[#20c997]" : "text-[#dc3545]"}`}>% {currency.price_info.change.toFixed(2)}</p>
-                <p className='text-mode mb-3 text-left'>{currency.price_info.price} تومان</p>
+                <p className={`text-left  [direction:ltr] ${currency.price_info_change > 0 ? "text-[#20c997]" : "text-[#dc3545]"}`}>% {Number(currency.price_info_change).toFixed(2)}</p>
+                <p className='text-mode mb-3 text-left'>{currency.price} تومان</p>
                 <div className='max-w-[150px] min-w-[150px]'>
                 {/* @ts-ignore */}
-                    <Sparklines data={[...currency.price_info.price]}>
-                        <SparklinesLine style={{ height: "20px" }} color={currency.price_info.change > 0 ? "#20c997" : "#dc3545"} />
+                    <Sparklines data={[12,56,3233,656]}>
+                        <SparklinesLine style={{ height: "20px" }} color={Number(currency.price_info_change) > 0 ? "#20c997" : "#dc3545"} />
                     </Sparklines>
                 </div>
             </div>

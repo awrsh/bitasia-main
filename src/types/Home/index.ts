@@ -6,6 +6,7 @@ export type Currency = {
     decimal_amount: number;
     decimal_irt: number;
     for_loan: boolean;
+    price_info_change:number;
     for_stake: boolean;
     for_test: boolean;
     high_risk: boolean;
@@ -14,6 +15,7 @@ export type Currency = {
     max_withdraw_commission: string;
     min_withdraw: string;
     networks: string[];
+    price:string;
     price_info: {
         price: string,
         time: string,
@@ -47,7 +49,7 @@ export type Currency = {
     withdraw_commission_type: string;
 }
 export type ResponseCurrency = {
-    results: Currency[];
+    objects: Currency[];
     count: number
     next: null | number
     previous: number | null

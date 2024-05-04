@@ -23,7 +23,7 @@ const Header = () => {
       <div className='flex items-center gap-3 '>
         <ThemeButton />
         <a className='block font-bold border rounded-lg p-2  border-gray-500 dark:border-green-500 text-gray-600 dark:text-white' href="https://dashboard.bitasia.ir">
-          ورود‌ و ثبت‌نام
+          ورود به پنل کاربری
         </a>
       </div>
     </header>

@@ -1,3 +1,4 @@
+"use client";
 import { fluctuationsInDigitalCurrency } from '@/helpers/utils/data'
 import React from 'react'
 import CardFluctuationsInDigitalCurrency from './CardFluctuationsInDigitalCurrency'
@@ -13,7 +14,7 @@ const FluctuationsInDigitalCurrency = ({ currency }: Props) => {
       <div className='flex flex-col lg:flex-row mt-5 lg:mt-3 items-center justify-between gap-6'>
         {
           currency.slice(1,7).map((currency, idx) => {
-            if(Number(currency.price_info.price) === 0) return null
+            if(Number(currency.price) === 0) return null
             return (
               <CardFluctuationsInDigitalCurrency key={idx} currency={currency} />
             )
